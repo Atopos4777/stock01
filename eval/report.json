@@ -1,0 +1,259 @@
+{
+  "generated_at": "2026-11-13T08:56:39",
+  "env": {
+    "python": "3.10.11",
+    "embedding_mode": "bge",
+    "embedding_model": "D:/hf-cache/hub/models--BAAI--bge-m3/snapshots/5617a9f61b028005a4858fdac845db406aefb181",
+    "llm_enabled": false,
+    "products": 2000,
+    "policy_chunks": 27,
+    "platform": "Windows / CPU"
+  },
+  "intent": {
+    "samples": 94,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "after_sales": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "order_query": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "policy_qa": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "product_advice": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "smalltalk": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "unknown": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "unsafe": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "retrieval": {
+    "cases": 60,
+    "bm25": {
+      "recall@10": 0.995,
+      "ndcg@10": 0.9879,
+      "mrr": 0.9806
+    },
+    "hybrid": {
+      "recall@10": 0.9867,
+      "ndcg@10": 0.9868,
+      "mrr": 1.0
+    },
+    "system": {
+      "recall@10": 0.9392,
+      "ndcg@10": 0.9404,
+      "mrr": 0.9722
+    },
+    "lift_hybrid_vs_bm25": {
+      "recall@10": -0.0083,
+      "ndcg@10": -0.0011,
+      "mrr": 0.0194
+    },
+    "note": "hybrid 只按 RRF 融合分排序；system 额外叠加库存/销量/评分/预算贴合等业务信号，故相关性指标会下降，属设计取舍。"
+  },
+  "policy": {
+    "cases": 15,
+    "top1_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "latency_p50_ms": 163.6
+  },
+  "policy_details": [
+    {
+      "q": "耳机拆封之后还能七天无理由退货吗",
+      "expected": "POL-001",
+      "top3": [
+        "POL-001",
+        "POL-006",
+        "POL-008"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "退货的运费谁承担",
+      "expected": "POL-001",
+      "top3": [
+        "POL-001",
+        "POL-002",
+        "POL-007"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "多少元包邮",
+      "expected": "POL-003",
+      "top3": [
+        "POL-003",
+        "POL-005",
+        "POL-001"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "发票怎么开，多久能开出来",
+      "expected": "POL-004",
+      "top3": [
+        "POL-004",
+        "POL-004",
+        "POL-004"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "质量问题退货需要提供什么证据",
+      "expected": "POL-002",
+      "top3": [
+        "POL-002",
+        "POL-002",
+        "POL-007"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "签收后几天内可以申请无理由退货",
+      "expected": "POL-001",
+      "top3": [
+        "POL-001",
+        "POL-001",
+        "POL-001"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "化妆品拆封了能退吗",
+      "expected": "POL-008",
+      "top3": [
+        "POL-008",
+        "POL-001",
+        "POL-001"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "高价值商品退款有什么特别规定",
+      "expected": "POL-005",
+      "top3": [
+        "POL-005",
+        "POL-005",
+        "POL-005"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "超过发货时间没发货怎么办",
+      "expected": "POL-003",
+      "top3": [
+        "POL-003",
+        "POL-003",
+        "POL-003"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "耳机保修多久，配件保修吗",
+      "expected": "POL-006",
+      "top3": [
+        "POL-006",
+        "POL-006",
+        "POL-006"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "运动鞋试穿后还能退吗",
+      "expected": "POL-007",
+      "top3": [
+        "POL-007",
+        "POL-007",
+        "POL-007"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "偏远地区运费怎么算",
+      "expected": "POL-003",
+      "top3": [
+        "POL-003",
+        "POL-003",
+        "POL-001"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "企业能开专用发票吗",
+      "expected": "POL-004",
+      "top3": [
+        "POL-004",
+        "POL-004",
+        "POL-007"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "护肤品保质期不足6个月能退吗",
+      "expected": "POL-008",
+      "top3": [
+        "POL-008",
+        "POL-008",
+        "POL-008"
+      ],
+      "top1": true,
+      "hit3": true
+    },
+    {
+      "q": "七天无理由的例外品类有哪些",
+      "expected": "POL-001",
+      "top3": [
+        "POL-001",
+        "POL-001",
+        "POL-001"
+      ],
+      "top1": true,
+      "hit3": true
+    }
+  ],
+  "e2e": {
+    "requests": 12,
+    "p50_ms": 168.62,
+    "p95_ms": 266.21,
+    "p99_ms": 318.68,
+    "mean_ms": 139.31
+  },
+  "labeling_note": "意图集为人工构造（含负样本）；检索集按商品属性约束程序化生成，属弱标注；政策集人工指定期望 doc_id。"
+}

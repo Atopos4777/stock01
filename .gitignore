@@ -1,0 +1,22 @@
+# 环境与密钥
+.env
+.venv/
+venv/
+
+# 运行产物
+data/
+data-tests/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 编辑器
+.vscode/
+.idea/
+
+# 临时诊断脚本
+eval/_diag_*.py
+eval/diag_*.txt

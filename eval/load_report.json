@@ -1,0 +1,30 @@
+{
+  "base": "http://127.0.0.1:8022",
+  "concurrency": 1,
+  "requests": 60,
+  "wall_seconds": 10.16,
+  "rps": 5.9,
+  "error_rate": 0.0,
+  "status_codes": {
+    "200": 60
+  },
+  "latency_ms": {
+    "mean": 169.29,
+    "p50": 210.02,
+    "p90": 311.5,
+    "p95": 321.91,
+    "p99": 346.62,
+    "max": 364.84
+  },
+  "ttft_ms": {
+    "p50": 200.89,
+    "p95": 301.33
+  },
+  "intents": [
+    "order_query",
+    "policy_qa",
+    "product_advice",
+    "smalltalk"
+  ],
+  "demo_token_used": true
+}
